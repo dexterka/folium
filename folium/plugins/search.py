@@ -41,6 +41,7 @@ class Search(MacroElement):
                 propertyName: '{{this.search_label}}',
             {% if this.geom_type == 'Point' %}
                 initial: false,
+                marker: false,
                 zoom: {{this.search_zoom}},
                 position:'{{this.position}}',
                 hideMarkerOnCollapse: true
